@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Purchase Page</title>
+    <!--Purchasing table styles-->
+    <link href="purchase.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="logo.png">
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav
+      class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+      style="display: flex; justify-content: space-between"
+    >
+      <!--Home Logo-->
+
+      <a href="main.html">
+        <img
+          src="logo.png"
+          alt="logo"
+          class="img-thumbnail"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <!--Page Navigation Buttons-->
+
+      <div>
+        <a href="main.html">
+          <button type="button" class="btn btn-outline-primary">Home</button>
+        </a>
+        <a href="portfolio.html">
+          <button type="button" class="btn btn-outline-secondary">
+            Portfolio
+          </button></a
+        >
+        <a href="about.html">
+          <button type="button" class="btn btn-outline-success">
+            About Me
+          </button></a
+        >
+      </div>
+      <!--Sign Up Button-->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Sign Up
+      </button>
+    </nav>
+
+    <div style="height: 80px; width: 10px"></div>
+    <h1 style="text-align: center">Purchase Product</h1>
+    <div
+      class="col-md-4"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    >
+      <div class="thumbnail" style="display: flex; justify-content: center">
+        <a href="purchase.html">
+          <img
+            src="boun_kedileri.PNG"
+            alt="Lights"
+            style="width: 100%"
+          />
+          <div class="caption">
+            <p>The King Monkey</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--Purchasing Table-->
+    <div
+      class="container-fluid"
+      style="background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%)"
+    >
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card h-100 shadow-lg">
+              <div class="card-body">
+                <div class="text-center p-3">
+                  <h5 class="card-title">Basic</h5>
+                  <small>Individual</small>
+                  <br /><br />
+                  <span class="h2">$8</span>
+                  <br /><br />
+                </div>
+                <p class="card-text">720p NFT Image for individuals</p>
+              </div>
+
+              <div class="card-body text-center">
+                <button
+                  class="btn btn-outline-primary btn-lg"
+                  style="border-radius: 30px"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card h-100 shadow-lg">
+              <div class="card-body">
+                <div class="text-center p-3">
+                  <h5 class="card-title">Standard</h5>
+                  <small>Small Business</small>
+                  <br /><br />
+                  <span class="h2">$20</span>
+                  <br /><br />
+                </div>
+                <p class="card-text">1080p NFT Image for small businesses</p>
+              </div>
+
+              <div class="card-body text-center">
+                <button
+                  class="btn btn-outline-primary btn-lg"
+                  style="border-radius: 30px"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card h-100 shadow-lg">
+              <div class="card-body">
+                <div class="text-center p-3">
+                  <h5 class="card-title">Premium</h5>
+                  <small>Large Companies</small>
+                  <br /><br />
+                  <span class="h2">$40</span>
+                  <br /><br />
+                </div>
+                <p class="card-text">4k NFT Image for large companies</p>
+              </div>
+
+              <div class="card-body text-center">
+                <button
+                  class="btn btn-outline-primary btn-lg"
+                  style="border-radius: 30px"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <label
+                  data-error="wrong"
+                  data-success="right"
+                  for="defaultForm-email"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  id="defaultForm-email"
+                  class="form-control validate"
+                />
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <label
+                  data-error="wrong"
+                  data-success="right"
+                  for="defaultForm-pass"
+                  >Your password</label
+                >
+
+                <input
+                  type="password"
+                  id="defaultForm-pass"
+                  class="form-control validate"
+                />
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Footer and social media buttons inside of it -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022 Copyright: Boun
+      <a
+        style="color: #3b5998"
+        href="https://www.facebook.com/vetha.cagdas.9"
+        role="button"
+        target="_blank"
+        ><i class="fa fa-facebook"></i
+      ></a>
+  
+      <!-- Twitter -->
+      <a
+        style="color: #55acee"
+        href="https://twitter.com/onemorgen"
+        role="button"
+        target="_blank"
+        ><i class="fa fa-twitter"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a
+        style="color: #ac2bac"
+        href="https://www.instagram.com/vethacagdas/?hl=tr"
+        role="button"
+        target="_blank"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <!--Linkedin-->
+      <a
+        style="color: #0072b1"
+        href="https://www.linkedin.com/in/vetha-%C3%A7a%C4%9Fda%C5%9F/"
+        role="button"
+        target="_blank"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+    </div>
+  
+    <!-- Copyright -->
+  </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

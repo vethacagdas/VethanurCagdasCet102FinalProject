@@ -1,0 +1,17 @@
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  font-size: large;
+  text-align: center;
+  color: black;
+}
